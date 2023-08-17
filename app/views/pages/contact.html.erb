@@ -1,0 +1,11 @@
+<h1>NGO Quang Trung</h1>
+<h2>Tél: 0605897922</h2>
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ol>
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholer="who are you looking for?">
+  <input type="submit">
+</form>
